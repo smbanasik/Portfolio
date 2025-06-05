@@ -4,11 +4,7 @@ import { AboutMeTab } from './AboutMe';
 import { ProjectsTab } from './Projects';
 import styles from './TabBox.module.css';
 
-enum Tabs {
-    AboutMe,
-    Education,
-    PersonalProjects
-}
+type Tabs = "AboutMe" | "Education" | "PersonalProjects";
 
 interface TabBarProps {
     selectTab: Function
@@ -18,11 +14,11 @@ function TabBar({selectTab}: TabBarProps) {
     return (
     <div className={styles.TabBar}>
         <label className={styles.TabBarEntry}
-            onClick={() => selectTab(Tabs.AboutMe)}>About Me</label>
+            onClick={() => selectTab("AboutMe")}>About Me</label>
         <label className={styles.TabBarEntry}
-            onClick={() => selectTab(Tabs.Education)}>Education</label>
+            onClick={() => selectTab("Education")}>Education</label>
         <label className={styles.TabBarEntry}
-            onClick={() => selectTab(Tabs.PersonalProjects)}>Personal Projects</label>
+            onClick={() => selectTab("PersonalProjects")}>Personal Projects</label>
     </div>
     )
 }
@@ -30,15 +26,15 @@ function TabBar({selectTab}: TabBarProps) {
 
 export function TabBox() {
 
-    const [selectedTab, setSelectedTab] = useState<Tabs>(Tabs.Education);
+    const [selectedTab, setSelectedTab] = useState<Tabs>("AboutMe");
 
     function getTabContent(selectedTab: Tabs) {
         switch(selectedTab) {
-            case Tabs.AboutMe:
+            case "AboutMe":
                 return (<AboutMeTab/>)
-            case Tabs.Education:
+            case "Education":
                 return (<EducationTab/>)
-            case Tabs.PersonalProjects:
+            case "PersonalProjects":
                 return (<ProjectsTab/>)
         }
     };

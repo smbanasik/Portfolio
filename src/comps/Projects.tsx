@@ -6,6 +6,13 @@ interface ProjectProps {
     techStack: Array<string>
 }
 
+
+// TODO: Key features or challenges overcome (bullet points)
+// What makes it interesting, what hurdles did you solve, what did you learn?
+// TODO: dates
+// TODO: optional: future plans
+// TODO: reflections
+
 function Project({title, description, repoLink, techStack}:  ProjectProps) {
 
     let techStackFormatted = techStack.slice(0, -1);

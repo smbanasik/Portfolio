@@ -1,3 +1,6 @@
+
+// TODO: have a quick snapshow that shows the degrees I have
+
 export function EducationTab() {
     return(
         <>
