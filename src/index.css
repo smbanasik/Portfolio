@@ -1,4 +1,16 @@
 :root {
+  --background: #2E4257;
+  --backgroundDark: #1E2B3A;
+  --textTitle: #FDF6E3;
+  --textSubtitle: #E99D50;
+  --textChapter: #FFD9A0;
+  --textDefault: #f3ece5;
+  --buttonBorder: #3B546B;
+
+  --linkText: #b9cd6f;
+  --linkHover: #b0d4ff;
+  --linkVisited: #6A9ACF;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   font-weight: 400;
@@ -11,18 +23,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --background: #2E4257;
-  --backgroundDark: #1E2B3A;
-  --textTitle: #FDF6E3;
-  --textSubtitle: #E99D50;
-  --textChapter: #FFD9A0;
-  --textDefault: #f3ece5;
-  --buttonBorder: #3B546B;
-
-  --linkText: #b9cd6f;
-  --linkHover: #b0d4ff;
-  --linkVisited: #6A9ACF;
 }
 
 a {
