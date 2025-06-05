@@ -1,0 +1,17 @@
+.MyHeader {
+    text-align: center;
+}
+
+.MyHeader h1 {
+    margin: 10px 10px 0px 10px;
+    color: var(--textTitle)
+}
+
+.MyHeader h2 {
+    margin: 0px 0px 10px 0px;
+    color: var(--textSubtitle)
+}
+
+.MyHeader address {
+    margin: 0px 0px 10px 0px;
+}

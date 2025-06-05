@@ -16,11 +16,9 @@ function Project({title, description, repoLink, techStack}:  ProjectProps) {
 
     return (
         <>
-        <a href={repoLink}>
-        <h2>{title}</h2>
-        </a>
+        <h3><a href={repoLink}>{title}</a></h3>
         <p>{description}</p>
-        <p>Notable Tech: {techStackFormatted}</p>
+        <p>Tech Stack: {techStackFormatted}</p>
         </>
     )
 }
@@ -28,12 +26,12 @@ function Project({title, description, repoLink, techStack}:  ProjectProps) {
 export function ProjectsTab() {
     return (
         <>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <Project
-        title={"Test"}
-        description={"Testing hard"}
-        repoLink={"https://github.com/smbanasik/GarFishEngine"}
-        techStack={["apple", "banana"]}
+        title={"This Portfolio"}
+        description={"A portfolio website created using typescript and react, and hosted on AWS."}
+        repoLink={"https://github.com/smbanasik/Portfolio"}
+        techStack={["React", "Typescript", "AWS"]}
         />
         <Project
         title="TestTwo"

@@ -1,0 +1,31 @@
+
+.TabBar {
+    text-align: center;
+    border-top: 2px solid var(--textSubtitle);
+    margin: 5px 5px 5px 5px;
+    padding: 20px 0px 0px 0px;
+}
+
+.TabBarEntry {
+    border-radius: 5px;
+    border: 2px solid var(--buttonBorder);
+    padding: 4px 6px 4px 6px;
+    margin: 0px 10px 0px 10px;
+    color: var(--textTitle)
+}
+
+.TabBarEntry:hover {
+    background-color: var(--backgroundDark);
+}
+
+.TabBox h2 {
+    padding: 0px 5px 0px 2px;
+    width: fit-content;
+    color: var(--textSubtitle);
+    border-bottom: 2px solid var(--textSubtitle);
+}
+
+.TabBox h3 { 
+    color: var(--textChapter);
+    width: fit-content;
+}

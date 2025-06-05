@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { EducationTab } from './Education';
 import { AboutMeTab } from './AboutMe';
 import { ProjectsTab } from './Projects';
+import styles from './TabBox.module.css';
 
 enum Tabs {
     AboutMe,
@@ -15,10 +16,13 @@ interface TabBarProps {
 
 function TabBar({selectTab}: TabBarProps) {
     return (
-    <div>
-        <label onClick={() => selectTab(Tabs.AboutMe)}>About Me</label>
-        <label onClick={() => selectTab(Tabs.Education)}>Education</label>
-        <label onClick={() => selectTab(Tabs.PersonalProjects)}>Personal Projects</label>
+    <div className={styles.TabBar}>
+        <label className={styles.TabBarEntry}
+            onClick={() => selectTab(Tabs.AboutMe)}>About Me</label>
+        <label className={styles.TabBarEntry}
+            onClick={() => selectTab(Tabs.Education)}>Education</label>
+        <label className={styles.TabBarEntry}
+            onClick={() => selectTab(Tabs.PersonalProjects)}>Personal Projects</label>
     </div>
     )
 }
@@ -40,10 +44,12 @@ export function TabBox() {
     };
 
     return (
-        <div>
+        <>
             <TabBar selectTab={setSelectedTab}/>
-            {getTabContent(selectedTab)}
-        </div>
+            <div className={styles.TabBox}>
+                {getTabContent(selectedTab)}
+            </div>
+        </>
     )
 
 }
