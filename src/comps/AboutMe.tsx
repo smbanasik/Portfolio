@@ -39,26 +39,3 @@ export function AboutMeTab() {
         </>
     )
 }
-
-// Should include interests, general about me summary
-// and current work
-
-// About me summary:
-// Who am I professionally (recent comp sci grad with focus on X)
-// What drives me (im passionate about X)
-// My strengths (quick learner, detail oriented, hard working)
-// Where I'm going (looking for X)
-
-// Interests
-// Academic interests (my classwork)
-// Professional interests (software engineering, embedded systems, architecture)
-// Personal interests (hiking, boyscouts, gaming)
-
-// Current work
-// My projects
-// What I'm learning right now
-
-// Skill Snapshot
-// Languages
-// Tools & Frameworks
-// Concepts (low-level optimization, real-time rendering, memory management)
