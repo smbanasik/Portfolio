@@ -29,13 +29,12 @@ export function AboutMeTab() {
 
             <h2>Skill Snapshot</h2>
             <h3>Languages</h3>
-            <p><strong>Experienced:</strong> C++</p>
-            <p><strong>Intermediate:</strong> C, Python, Java</p>
-            <p><strong>Learning:</strong> TypeScript</p>
+            <p><strong>Advanced:</strong> C++, C</p>
+            <p><strong>Intermediate:</strong> Python, Java</p>
+            <p><strong>Familiar:</strong> TypeScript</p>
 
             <h3>Tools, Frameworks, & Libraries</h3>
-            <p><strong>Familiar:</strong> CMake, PyTorch, TensorFlow, WinSock API, Windows.h</p>
-            <p><strong>Learning:</strong> React</p>
+            <p><strong>Familiar:</strong> CMake, PyTorch, TensorFlow, WinSock API, Windows.h, React</p>
         </>
     )
 }
